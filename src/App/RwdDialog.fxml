@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:controller="App.RwdDialogController" xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Fill in the information for the new Reward
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+
+            <Label text="Reward ID : " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="tfRwdId" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+            <Label text="Reward Name : " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="tfRwdName" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+            <Label text="Reward Description: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextArea fx:id="taRwdDesc" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+
+        </GridPane>
+    </content>
+</DialogPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:controller="App.Cus_RwdDialogController" xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Choose the reward id to add to Client
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+
+            <Label text="Reward ID : " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="cbCus_Rwd_RwdId" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+
+            <Label text="Reward Name : " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="tfCus_Rwd_RwdName" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+            <Label text="Reward Description: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextArea fx:id="taCus_Rwd_RwdDesc" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+
+        </GridPane>
+    </content>
+</DialogPane>
